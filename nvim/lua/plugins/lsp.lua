@@ -34,18 +34,6 @@ return {
       vim.keymap.set("n", "<leader>ni", "<cmd>Telescope lsp_implementations<cr>", { desc = "Go to implementation" })
       vim.keymap.set("n", "<leader>nt", "<cmd>Telescope lsp_type_definitions<cr>", { desc = "Go to type definition" })
 
-      vim.lsp.config("jdtls", {
-        root_markers = { "gradlew", "pom.xml", ".git" },
-        settings = {
-          java = {
-            import = { gradle = { enabled = true } },
-            configuration = {
-              updateBuildConfiguration = "automatic",
-            },
-          },
-        },
-      })
-      vim.lsp.enable("jdtls")
     end,
   },
 }
