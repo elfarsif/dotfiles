@@ -5,6 +5,9 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold" }, {
   command = "silent! checktime",
 })
 
+-- line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
 -- enable true colors
 vim.opt.termguicolors = true
 -- tab settings (4 spaces)
