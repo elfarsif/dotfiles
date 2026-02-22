@@ -16,7 +16,7 @@ return {
       { "<leader>f", group = "Find" },
       { "<leader>c", group = "Code" },
       { "<leader>z", group = "Folds" },
-      { "<leader>r", group = "Refactor" },
+      { "<leader>q", group = "Refactor" },
       { "<leader>n", group = "Navigate" },
       { "<leader>w", group = "Window" },
     },

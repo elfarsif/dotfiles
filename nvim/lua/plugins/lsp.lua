@@ -27,7 +27,7 @@ return {
       vim.lsp.enable("pyright")
       vim.lsp.enable("ts_ls")
 
-      vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
+      vim.keymap.set("n", "<leader>qn", vim.lsp.buf.rename, { desc = "Rename symbol" })
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
       vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<cr>", { desc = "Find references" })
       vim.keymap.set("n", "<leader>nr", "<cmd>Telescope lsp_references<cr>", { desc = "Find usages/references" })
