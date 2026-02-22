@@ -16,4 +16,16 @@ mkdir -p ~/.config/alacritty
 ln -sf "$DOTFILES/alacritty.toml" ~/.config/alacritty/alacritty.toml
 echo "Linked alacritty.toml -> ~/.config/alacritty/alacritty.toml"
 
+# Zsh
+ln -sf "$DOTFILES/zshrc" ~/.zshrc
+echo "Linked zshrc -> ~/.zshrc"
+
+# Oh My Zsh
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo "Installing Oh My Zsh..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+else
+    echo "Oh My Zsh already installed"
+fi
+
 echo "Done!"
